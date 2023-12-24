@@ -1,0 +1,59 @@
+.wrapper1,
+.twoscreen {
+	@apply w-screen min-h-screen relative;
+}
+.wrapper1 {
+	background-image: url('/bg.png');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.twoscreen > form {
+	@apply w-1/2 justify-center mt-56 p-3 mx-40 mr-64 left-5 top-48 my-12 float-right text-center;
+}
+.twoscreen {
+	@apply h-1/2 bg-gradient-to-l from-pink-500 to-purple-700;
+}
+
+img {
+	width: 500px;
+}
+
+.twoscreen > div > img {
+	@apply absolute mx-40 my-14;
+}
+.twoscreen > form > h1 {
+	@apply text-2xl mb-3;
+}
+.twoscreen > h1 {
+	@apply text-center py-5;
+}
+.twoscreen > form > input {
+	@apply block py-1.5 px-3 mb-2 w-full border border-transparent
+	bg-black/30 placeholder-white/60 outline-none;
+	transition: border-color 0.35s linear;
+}
+.twoscreen > form > input:focus {
+	@apply border border-[#ffb3c0];
+}
+.twoscreen > form > button {
+	@apply text-lg font-medium uppercase py-1 px-4 rounded-none border-white inline-block mt-2 bg-transparent text-center mx-auto;
+	transition: box-shadow 0.4s linear, background-color 0.4s linear;
+}
+.twoscreen > form > button:hover {
+	@apply bg-white/20;
+}
+.success {
+	@apply text-green-400 text-2xl font-medium m-auto;
+	animation: fade 0.4s;
+}
+
+@keyframes fade {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
